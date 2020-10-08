@@ -1,0 +1,131 @@
+.block-sm {
+  width: 100px;
+  height: 100px;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-blue {
+  background-color: blue;
+}
+.display-inline {
+  display: inline;
+}
+.display-inline-block {
+  display: inline-block;
+}
+div {
+  list-style-position: inside;
+  display: list-item;
+}
+header,
+footer {
+  color: white;
+  height: 100px;
+  background-color: black;
+}
+aside {
+  width: 40%;
+  height: 400px;
+  background-color: grey;
+  float: left;
+  /* display: inline-block; */
+}
+article {
+  width: 60%;
+  height: 800px;
+  background-color: blanchedalmond;
+  float: left;
+  /* display: inline-block; */
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Posittion */
+.parent {
+  width: 500px;
+  height: 500px;
+  /* position: relative; */
+}
+.child {
+  /* position: relative; */
+  width: 300px;
+  height: 200px;
+}
+.first-child {
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: fixeds; */
+  left: 100px;
+  top: 100px;
+}
+.overflow {
+  overflow: scroll;
+}
+/* @media only screen and (min-width:1024px) {
+  article {
+    background-color: yellow;
+  }
+} */
+@media only screen and (max-width: 768px) and(min-width:400px) {
+  aside {
+    background-color: yellow;
+  }
+  article {
+    width: 100%;
+  }
+}
+
+/* translate */
+/* .overflow {
+  transform: translate(10px, 10px);
+  transform: rotateX(45deg);
+  transform: scale(1.5, 1.5);
+  transform: translate(10px, 10px) rotateX(45deg) scale(1.5, 1.5);
+} */
+.overflow:hover {
+  transform: translate(10px, 10px) rotate(45deg) scale(1.5, 1.5);
+  transition: transform 1s ease-in-out 0s;
+}
+input:focus {
+  width: 500px;
+  transition: width 1s ease-in-out 0s;
+}
+/* animations */
+.animation {
+  position: relative;
+  left: 300px;
+  animation: slide 2s ease-in-out 1s 2 normal forwards;
+}
+@keyframes slide {
+  0% {
+    background: yellow;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background: white;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background: tomato;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background: turquoise;
+    left: 0;
+    top: 300px;
+  }
+  100% {
+    background: black;
+    left: 0;
+    top: 0px;
+  }
+}

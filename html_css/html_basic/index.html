@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,tr,td,th{
+        border: 1px solid black;
+      }
+      table{
+        border-collapse: collapse;
+        width: 100%;
+
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+  <body>
+    <!-- Paragraph, heading, formatting -->
+    <p>
+      Paragraph: Lorem ipsum <mark>dolor</mark> sit amet consectetur,
+      adipisicing elit. Reiciendis at iusto consequuntur optio vel nihil laborum
+      consequatur quos quo, totam labore quae ad dolorum molestiae corporis
+      exercitationem perferendis perspiciatis. Sint.
+    </p>
+    <h1>Heading h1 (only one)</h1>
+    <h2>Heading h2</h2>
+    ...
+    <h4>Heading h4</h4>
+    <h6>Heading h6</h6>
+    <mark>Mark</mark>
+    <mark>Mark</mark>
+    <sup>Sup</sup>
+    <sub>Sub</sub>
+    <br />
+    Example: (Math) a <sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+    <br />(Chemistry) H<sub>2</sub>O
+    <!-- html co 2 loai the la inline cung 1 dong, còn
+    block chiem het ca vung ben trai va ben phai -->
+    <br />
+    <strong>Strong</strong>
+    <!-- Strong nhan manh dung trong chuan SEO -->
+    <b>Bold</b>
+    <!-- Bold to dam -->
+    <em>Emphase</em>
+    <i>Italic</i>
+    <p><ins>Nghieng</ins> not <del>Nghien</del></p>
+    <p>Parent <span style="color: red">Child</span> Parent</p>
+    <p>Parent <div style="color: red">Child</div> Parent</p>
+    <div>Div</div>    <!-- thẻ div để gom nhóm, div là thẻ block -->
+    <span>Span</span>    <!-- thẻ span là thẻ cô lập, span là thẻ inline-->
+    <br>----------------------------------
+    <br> 
+    <!-- Link  -->
+    <a id="go-to-google" href="https://google.com.vn" target="blank">Link: go to google</a>    <!-- External Link: link bên ngoài không liên quan đến project của mình  -->
+    <a href="https://fb.com" target="self">Link: go to facebook</a>    <!-- target="blank" mở 1 new tab -->
+    <a href="./about.html">Go to About</a>        
+    <a href="/html_basic/about.html">Go to About</a>        <!-- Internal Link -->
+    <!-- External Link image -->
+    <img width="100px" height="100px" src="https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-04.jpg" alt="Background image">
+    <img src="/html_basic/images/bg.jpg" alt=""> <!--phụ thuộc vào vị trí project-->
+    <br>
+    <img src="./images/bg.jpg" alt=""> <!--phụ thuộc vào vị trí file index.html-->
+    <!-- <img src="D:\React2008e\REACTJS2008\html_basic\images\bg.jpg" alt=""> -->
+
+    <!-- Lists , unorder list, order list -->
+    <ul style="list-style-type:square">
+      <li>Hà Nội</li>
+      <li>Tp HCM</li>
+      <li>Nha Trang</li>
+    </ul>
+    <ol type="a">
+      <li>Đà Nẵng</li>
+      <li>Hà Nội</li>
+      <li>Tp HCM</li>
+    </ol>
+     <!-- table  -->
+     <table>
+       <thead>
+        <tr>
+          <th>ID</th>
+          <th>Student Name</th>
+          <th colspan="2">Grade + Class</th>
+        </tr>
+        
+       </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Đỗ Nguyên Toại</td>
+          <td>A</td>
+          <td rowspan="3">ReactJS</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Lê Khánh Quang</td>
+          <td>A</td>
+          <!-- <td>ReactJS</td> -->
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Đức Nhân</td>
+          <td>A</td>
+          <!-- <td>ReactJS</td> -->
+        </tr>
+      </tbody>
+     </table>
+     <!-- HTML Layout -->
+
+     <div class="header">
+      <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Maps</li>
+    </ul>
+  </div>
+     <header>
+       <ul>
+       <li>Home</li>
+       <li>About</li>
+       <li>Contact</li>
+       <li>Maps</li>
+     </ul>
+    </header>
+     <section>
+       <nav>
+         Navigation
+       </nav>
+       <article>
+          <h3>Post</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quasi animi debitis nisi dicta error provident architecto aliquid maxime sint nulla qui dolores maiores odio molestiae iusto velit unde necessitatibus!</p>
+        </article>
+     </section>
+     <footer>Footer</footer>
+     <!-- Form  -->
+     <form action="/server.js" method="GET">
+      <fieldset>
+        <legend>Input</legend>
+        <input name="mail" type=" text" placeholder="Email or Phone Number">
+        <input name="password" type="password" placeholder="password">
+        <input type="submit" value="Submit">
+        <input name="email" type=" email" required placeholder="Email">
+        <input name="age" type="number" min="0" max="10" required placeholder="Number">
+       <button>Button</button>
+      </fieldset>
+      
+       
+       <label for="">Ngày sinh</label>
+       <select name="dateOfBirth" id="">
+         
+        <optgroup label="Spring">
+           <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </optgroup>
+        <optgroup label="Summer">
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </optgroup>
+
+       </select>
+       <br>
+
+       <label for="gender">Gender</label>
+       <br>
+       <label for="male">Male</label> <input id="male" name="gender" type="radio">
+
+       <label for="female">Female</label><input id="female" name="gender" type="radio">
+       
+       <br><input id="policy" type="checkbox">
+       <label for="policy">Bạn đồng ý </label>
+       <br>
+      <textarea name="description" id="description" cols="30" rows="10"></textarea>
+      </form>
+      <!-- Media tags -->
+      <audio controls  src="./NguoiBanCu-QuangOris-6236542.mp3">Nhạc của tôi</audio>
+      <video src=""></video>
+      <br>
+      <span class="fas fa-cloud"></span>
+
+      <canvas id="myCanvas" width="250" height="300"  style="border:1px solid #d3d3d3;">
+       
+        Your browser is not canvas
+      </canvas>
+    </body>
+</html>

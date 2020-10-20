@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <link rel="stylesheet" href="./dom/style.css" />
   </head>
   <body>
-    <!-- <div id="ex6">
+    <!-- ex6 -->
+    <div id="ex6">
       <button class="js-bgr-blue">Green</button>
       <button class="js-bgr-red">Red</button>
-    </div> -->
+    </div>
+
+    <!-- ex10 -->
     <p class="text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam modi
       provident officia. Harum natus excepturi doloribus qui nihil voluptates,
       expedita blanditiis beatae accusamus autem deserunt, quo fuga,
+      <span class="dots">...</span>
       <span class="moreText">
         architecto accusantium voluptatum. Lorem ipsum dolor sit amet
         consectetur adipisicing elit. Id iure blanditiis inventore praesentium
@@ -22,6 +27,22 @@
       </span>
     </p>
     <button class="read-more-btn">Read More</button>
+
+    <!-- ex13 -->
+    <div class="ex13">
+      <img
+        src="./images/clock.png"
+        alt=""
+        width="180px"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <div style="text-align: center">
+        <p><span id="seconds">00 </span>: <span id="tens">00</span></p>
+        <button id="btn-start">Start</button>
+        <button id="btn-stop">Stop</button>
+        <button id="btn-reset">Reset</button>
+      </div>
+    </div>
     <script src="dom.js"></script>
   </body>
 </html>
